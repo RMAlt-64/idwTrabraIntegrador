@@ -1,0 +1,23 @@
+
+button{
+    width: 110px;
+    height: 50px;
+    background-color: rgb(87, 173, 239);
+    border-radius: 6px;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+    font-size:15px;
+
+}
+button:hover {
+animation: swing 1s ease;
+animation-iteration-count: 1;
+box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.7); /* Cambia la sombra al pasar el mouse */
+}
+
+.seccion2{
+    display: flex;
+    justify-content: center;
+    background-color: rgb(181, 186, 190);
+    padding: 10px;
+}

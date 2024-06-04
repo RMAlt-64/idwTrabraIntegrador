@@ -1,0 +1,48 @@
+.contenedoralojamientoss {
+    padding: 20px;
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.tipoalojamiento {
+    margin-bottom: 20px;
+}
+.contenedoralojamientos h2 {
+
+    font-weight: 100;
+    font-size: 50px;
+    color: #000000;
+}
+
+.contenedoralojamientos {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.Talojamiento {
+    display: flex;
+    flex-direction: row;
+}
+
+.Talojamiento p {
+    margin: 3px 10px;
+}
+
+.Talojamiento span {
+    color: #000000;
+    text-shadow: none;
+    font-family: 'Roboto';
+    font-weight: bold;
+}
+
+.noTipoAlojamientos {
+    color: #000000;
+    text-shadow: none;
+    font-family: 'Roboto';
+    font-weight: bold;
+    font-size: 20px;
+}
+

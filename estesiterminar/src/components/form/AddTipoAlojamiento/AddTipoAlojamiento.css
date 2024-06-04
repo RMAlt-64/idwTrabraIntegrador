@@ -1,0 +1,56 @@
+*{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+        'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+        sans-serif;
+}
+
+
+.agregarcontenedoraloj{
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+    justify-content: center;
+    align-items: center;
+}
+.agregarcontenedoraloj h2 {
+    font-size: 45px;
+    color: #000000;
+}
+.contenedorform {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.inaloj {
+    width: 300px;
+    padding: 10px 30px;
+    font: inherit;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+    
+}
+
+.botonesContainer {
+    justify-content: space-between; /*horizontalmente */
+    padding: 15px 15px;
+}
+.enviarform {
+    padding: 10px 20px;
+    font-size: 16px;
+    color: #fff;
+    background-color: #007bff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+
+
+}
+
+.volver{
+    margin: 0 30px;
+}

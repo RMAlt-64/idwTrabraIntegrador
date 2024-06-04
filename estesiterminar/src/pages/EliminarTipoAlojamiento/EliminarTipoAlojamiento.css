@@ -1,0 +1,34 @@
+
+
+.eliminarAlojamiento {
+    margin-bottom: 20px;
+}
+
+.botonesContainer {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.actualizalista, .volver {
+    padding: 10px 20px;
+    font-size: 16px;
+    color: #fff;
+    background-color: #007bff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+    
+}
+
+.actualizalista:hover, .volver:hover {
+    background-color: #053466;
+}
+
+.volveradmin {
+    color: #fff;
+    text-decoration: none;
+}
