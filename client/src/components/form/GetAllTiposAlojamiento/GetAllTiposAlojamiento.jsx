@@ -23,7 +23,7 @@ export const GetAllTiposAlojamiento = ({ refreshTrigger }) => {
 
     useEffect(() => {
         obtenerAlojamientos();
-    }, [refreshTrigger]); // refetch de datos
+    }, [refreshTrigger]); 
 
     return (
         <div>

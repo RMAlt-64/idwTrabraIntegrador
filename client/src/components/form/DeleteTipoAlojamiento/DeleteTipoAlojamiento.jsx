@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import './DeleteTipoAlojamiento.css';
-import { Alert } from '../../Alert/Alert';
+import Alert from '../../Alert/Alert';
 
 export const DeleteTipoAlojamiento = () => {
     const [alojamientoId, setAlojamientoId] = useState('');

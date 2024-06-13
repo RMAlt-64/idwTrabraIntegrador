@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import './AddTipoAlojamiento.css';
 import { NavLink } from 'react-router-dom';
-import { Alert } from '../../Alert/Alert';
+import  Alert  from "../../Alert/Alert";
 
 export const AddTipoAlojamiento = () => {
     const [descripcion, setDescripcion] = useState('');
@@ -21,11 +21,14 @@ export const AddTipoAlojamiento = () => {
 
                 if (existealojamiento) {
                     setAlertMessage('Este alojamiento ya se encuentra registrado');
+                    setAlertType('alert-danger'); 
                     return;
                 }
             } else {
                 console.error('Error al obtener los tipos de alojamientos');
-                setAlertMessage('Error al verificar el tipo de alojamiento');                return;
+                setAlertMessage('Error al verificar el tipo de alojamiento');
+                setAlertType('alert-danger');
+                return;
             }
 
             const newAlojamiento = { Descripcion: descripcion };
@@ -41,16 +44,19 @@ export const AddTipoAlojamiento = () => {
 
             if (response.ok) {
                 setAlertMessage('El alojamiento fue agregado');
+                setAlertType('alert-success');
                 
             } else {
                 const errorResponse = await response.json();
                 console.error('Error al agregar el alojamiento', errorResponse);
                 setAlertMessage('Error al agregar el alojamiento');
+                setAlertType('alert-danger');
                 
             }
         } catch (error) {
             console.error('Error: ', error);
             setAlertMessage('Error al establecer el servicio. Por favor, intente de nuevo.');
+            setAlertType('alert-danger');
         }
     };
 

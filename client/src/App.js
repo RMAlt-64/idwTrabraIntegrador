@@ -6,7 +6,7 @@ import ContactPage from './pages/ContactPage';
 import HomePage from './pages/HomePage';
 import InformacionPage from './pages/InformacionPage';
 import LoginPage from './pages/loginpage'; // Cambiado a LoginPage y la importación es en minúsculas
-import { AdministrarAlojamientos } from "./pages/AdministrarAlojamientos/AdministrarAlojamientos/AdministrarAlojamientos";
+import { AdministrarAlojamientos } from "./pages/AdministrarAlojamientos/AdministrarAlojamientos";
 import { AgregarAlojamiento } from "./pages/AgregarTipoAlojamiento/AgregarTipoAlojamiento";
 import { GetTipoAlojamiento } from "./pages/GetTipoAlojamiento/GetTipoAlojamiento";
 import { AllTiposAlojamientos } from "./pages/AllTiposAlojamientos/AllTiposAlojamientos";

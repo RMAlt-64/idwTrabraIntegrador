@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import './GetTipoAlojamiento.css';
 import { NavLink } from 'react-router-dom';
-import { Alert } from '../../components/Alert/Alert';
+import Alert from '../../components/Alert/Alert';
 
 export const GetTipoAlojamiento = () => {
     const [alojamientoId, setAlojamientoId] = useState('');

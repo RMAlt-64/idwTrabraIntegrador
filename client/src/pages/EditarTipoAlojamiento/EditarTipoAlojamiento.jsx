@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import './EditarTipoAlojamiento.css';
-import { Alert } from '../../components/Alert/Alert';
+import Alert from '../../components/Alert/Alert';
 import { NavLink } from 'react-router-dom';
 import { GetAllTiposAlojamiento } from '../../components/form/GetAllTiposAlojamiento/GetAllTiposAlojamiento';
 
