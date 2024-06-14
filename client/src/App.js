@@ -13,6 +13,7 @@ import { AllTiposAlojamientos } from "./pages/AllTiposAlojamientos/AllTiposAloja
 import { EliminarTipoAlojamiento } from "./pages/EliminarTipoAlojamiento/EliminarTipoAlojamiento";
 import { EditarTipoAlojamiento } from "./pages/EditarTipoAlojamiento/EditarTipoAlojamiento";
 
+
 function App() {
   return (
     <Router>

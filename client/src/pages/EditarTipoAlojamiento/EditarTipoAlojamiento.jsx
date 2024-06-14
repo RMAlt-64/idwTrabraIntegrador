@@ -85,7 +85,7 @@ export const EditarTipoAlojamiento = () => {
             {alertMessage && <Alert message={alertMessage} type={alertType} className="custom-style" />}
 
             <div className="botonesContainer">
-                <button className='enviarform' onClick={editarAlojamiento}>
+                <button className='enviarform d-flex align-items-center justify-content-center' onClick={editarAlojamiento}>
                     Editar alojamiento
                 </button>
                 <button className='actualizarLista' onClick={actualizarLista}>

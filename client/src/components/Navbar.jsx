@@ -1,25 +1,28 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import './Navbar.css';
+import Logo from './img/globo.png'
 
 const Navbar = () => {
   return (
-    <nav>
-      <Link to="/" className="enlace">
-        <div className="logo-container">
-          <img src="/img/globo.png" alt="Logo" className="logo" />
-          <h1>IDW Alojamiento</h1>
+    <nav className="navbar navbar-expand-lg bg-info text-secondary text-uppercase fw-medium">
+      <div className="container-fluid">
+        <Link to="/" className="enlace">
+          <div className="d-flex justify-content-between align-items-center">
+            <img src={Logo}alt="Logo" width="88" height="80"></img>
+            <h2>IDW Alojamiento</h2>
+          </div>
+        </Link>
+        <div className="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul className="navbar-nav ms-auto mb-2 mb-lg-1">
+            <li className="nav-item me-3"><Link to="/">Inicio</Link></li>
+            <li className="nav-item me-3"><a href="/reservar">Reserva</a></li>
+            <li className="nav-item me-3"><Link to="/informacion">Información</Link></li>
+            <li className="nav-item me-3"><Link to="/contacto">Contacto</Link></li>
+            <li className="nav-item me-3"><Link to="/login">Login</Link></li> {/* Cambiado de <a> a <Link> */}
+            <li className="nav-item me-3"><a href="/AdministrarAlojamientos">CRUD</a></li>
+          </ul>
         </div>
-      </Link>
-
-      <ul>
-        <li><Link to="/">Inicio</Link></li>
-        <li><a href="/reservar">Reserva</a></li>
-        <li><Link to="/informacion">Información</Link></li>
-        <li><Link to="/contacto">Contacto</Link></li>
-        <li><Link to="/login">Login</Link></li> {/* Cambiado de <a> a <Link> */}
-        <li><a href="/AdministrarAlojamientos">CRUD</a></li>
-      </ul>
+      </div>
     </nav>
   );
 };
