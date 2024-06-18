@@ -1,7 +1,7 @@
 import React from 'react'
 import { AddTipoAlojamiento } from '../../components/form/AddTipoAlojamiento/AddTipoAlojamiento'
 
-export const AgregarAlojamiento = () => {
+export const AgregarTipoAlojamiento = () => {
 
 
     return (

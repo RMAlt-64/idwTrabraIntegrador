@@ -5,9 +5,9 @@ import Footer from './components/Footer';
 import ContactPage from './pages/ContactPage';
 import HomePage from './pages/HomePage';
 import InformacionPage from './pages/InformacionPage';
-import LoginPage from './pages/loginpage'; // Cambiado a LoginPage y la importación es en minúsculas
+import AgregarAlojamiento from './pages/AgregarAlojamientos/AgregarAlojamiento';
 import { AdministrarAlojamientos } from "./pages/AdministrarAlojamientos/AdministrarAlojamientos";
-import { AgregarAlojamiento } from "./pages/AgregarTipoAlojamiento/AgregarTipoAlojamiento";
+import { AgregarTipoAlojamiento } from "./pages/AgregarTipoAlojamiento/AgregarTipoAlojamiento";
 import { GetTipoAlojamiento } from "./pages/GetTipoAlojamiento/GetTipoAlojamiento";
 import { AllTiposAlojamientos } from "./pages/AllTiposAlojamientos/AllTiposAlojamientos";
 import { EliminarTipoAlojamiento } from "./pages/EliminarTipoAlojamiento/EliminarTipoAlojamiento";
@@ -22,10 +22,10 @@ function App() {
         <Routes>
           <Route path="/contacto" element={<ContactPage />} />
           <Route path="/informacion" element={<InformacionPage />} />
-          <Route path="/loginpage" element={<LoginPage />} /> {/* Cambiado a LoginPage */}
+          <Route path="/AgregarAlojamiento" element={<AgregarAlojamiento />} />
           <Route path="/" element={<HomePage />} />
           <Route path="/AdministrarAlojamientos" element={<AdministrarAlojamientos />} />
-          <Route path="/AgregarTipoAlojamiento" element={<AgregarAlojamiento />} />
+          <Route path="/AgregarTipoAlojamiento" element={<AgregarTipoAlojamiento />} />
           <Route path="/GetTipoAlojamiento" element={<GetTipoAlojamiento />} />
           <Route path="/AllTiposAlojamientos" element={<AllTiposAlojamientos />} />
           <Route path="/EliminarTipoAlojamiento" element={<EliminarTipoAlojamiento />} />

@@ -1,0 +1,13 @@
+.agregarAlojamiento {
+    text-decoration: none;
+    
+    border-radius: 5px;
+    text-align: center;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+    width: fit-content; 
+}
+
+.agregarAlojamiento:hover {
+    background-color: #838485;
+}

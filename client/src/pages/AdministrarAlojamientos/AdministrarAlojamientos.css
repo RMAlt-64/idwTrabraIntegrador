@@ -23,9 +23,9 @@
 
 .adminAlojamiento {
     display: inline-block;
-    padding: 10px 20px;
+    padding: 8px;
     background-color: #007bff;
-    color: white;
+    color: rgb(255, 255, 255);
     text-decoration: none;
     border: none;
     border-radius: 5px;
@@ -36,14 +36,13 @@
 }
 
 .adminAlojamiento:hover {
-    background-color: #5293da;
+    background-color: #616f7e;
 }
 
 .adminAlojamiento i {
     margin-right: 8px;
 }
 
-h2{
+.contenedoradmin h2{
     padding: 30px;
-    color: rgb(5, 59, 73);
 }

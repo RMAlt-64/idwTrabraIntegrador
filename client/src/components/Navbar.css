@@ -1,4 +1,4 @@
-nav {
+/* nav {
     background-color: rgb(98, 157, 212);
     height: 110px;
     width: 100%;
@@ -51,6 +51,18 @@ nav {
   li a.active, li a:hover {
     background-color: rgb(72, 106, 138);
     transition: .5s;
+  } */
+  .titulo{
+    text-decoration: none;
+    font-weight: bold;
+    color: ghostwhite;
   }
-  
-  
+  .item{
+    color: ghostwhite;
+    text-decoration: none;
+    font-size: medium;
+
+  }
+  .item:hover{
+    color: rgb(168, 155, 155);
+  }
