@@ -32,13 +32,13 @@ const AdministracionImagenes = () => {
     }, []);
 
     const handleCreate = () => {
-        setCurrentImagen({ titulo: '', url: '' }); // Inicializar el estado para crear una nueva imagen
+        setCurrentImagen({ titulo: '', url: '' }); 
         setModalMode('create');
         setShowModal(true);
     };
 
     const handleEdit = (imagen) => {
-        setCurrentImagen(imagen); // Establecer la imagen actual para editar
+        setCurrentImagen(imagen); 
         setModalMode('edit');
         setShowModal(true);
     };
@@ -59,8 +59,8 @@ const AdministracionImagenes = () => {
     };
 
     const handleSaveChanges = async () => {
-        const formData = new FormData(); // Usar FormData para enviar archivos binarios (imágenes)
-        formData.append('imageFile', imageFile); // Agregar el archivo de imagen al FormData
+        const formData = new FormData(); 
+        formData.append('imageFile', imageFile); 
 
         const url = modalMode === 'create' 
             ? 'http://localhost:3001/imagenes/createImagen'
@@ -94,15 +94,15 @@ const AdministracionImagenes = () => {
 
     const handleFileChange = (e) => {
         const file = e.target.files[0];
-        setImageFile(file); // Almacenar el archivo de imagen seleccionado en el estado
+        setImageFile(file); 
     };
     const fetchImagenesPorAlojamiento = async (idAlojamiento) => {
         try {
             const response = await fetch(`http://localhost:3001/imagenes/getByAlojamiento/${idAlojamiento}`);
             if (response.ok) {
                 const imagenes = await response.json();
-                // Aquí procesas las imágenes recibidas y las muestras en tu interfaz
-                console.log(imagenes); // Simplemente para ilustrar cómo obtendrías las imágenes
+                
+                console.log(imagenes); 
             } else {
                 console.error('Error al obtener las imágenes del alojamiento');
             }
@@ -111,8 +111,8 @@ const AdministracionImagenes = () => {
         }
     };
     
-    // Llamada a la función para obtener imágenes de un alojamiento específico
-    fetchImagenesPorAlojamiento(1); // Aquí usarías el ID del alojamiento deseado
+    
+    fetchImagenesPorAlojamiento(1); 
 
     if (loading) {
         return <p>Cargando imágenes...</p>;
