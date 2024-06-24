@@ -12,6 +12,12 @@ import { GetTipoAlojamiento } from "./pages/GetTipoAlojamiento/GetTipoAlojamient
 import { AllTiposAlojamientos } from "./pages/AllTiposAlojamientos/AllTiposAlojamientos";
 import { EliminarTipoAlojamiento } from "./pages/EliminarTipoAlojamiento/EliminarTipoAlojamiento";
 import { EditarTipoAlojamiento } from "./pages/EditarTipoAlojamiento/EditarTipoAlojamiento";
+import  ListaAlojamiento  from './pages/ListaAlojamiento/ListaAlojamiento';
+import AgregarServicio from './pages/Servicios/AgregarServicio';
+import AlojamientosYServicios from './pages/AlojamientosYServicios/AlojamientosYServicios';
+import AdministracionImagenes from './pages/AdministracionImagenes/AdministracionImagenes';
+
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 
 function App() {
@@ -30,6 +36,11 @@ function App() {
           <Route path="/AllTiposAlojamientos" element={<AllTiposAlojamientos />} />
           <Route path="/EliminarTipoAlojamiento" element={<EliminarTipoAlojamiento />} />
           <Route path="/EditarTipoAlojamiento" element={<EditarTipoAlojamiento />} />
+          <Route path="/ListaAlojamiento" element={<ListaAlojamiento />} />
+          <Route path="/AgregarServicio" element={<AgregarServicio />} />
+          <Route path="/AlojamientosYServicios" element={<AlojamientosYServicios />} />
+          <Route path="/AdministracionImagenes" element={<AdministracionImagenes />} />
+          
         </Routes>
         <Footer />
       </div>
