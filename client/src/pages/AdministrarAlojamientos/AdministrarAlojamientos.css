@@ -1,0 +1,48 @@
+*{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+        'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+        sans-serif;
+}
+
+.contenedoradmin {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 90px 100px 435px;
+}
+
+.contenedorDeLinks {
+    display: flex;
+    flex-direction: row; 
+    justify-content: center; 
+    gap: 10px; 
+    width: 100%; 
+    max-width: 1200px; 
+}
+
+.adminAlojamiento {
+    display: inline-block;
+    padding: 8px;
+    background-color: #007bff;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    border: none;
+    border-radius: 5px;
+    text-align: center;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+    width: fit-content; 
+}
+
+.adminAlojamiento:hover {
+    background-color: #616f7e;
+}
+
+.adminAlojamiento i {
+    margin-right: 8px;
+}
+
+.contenedoradmin h2{
+    padding: 30px;
+}
